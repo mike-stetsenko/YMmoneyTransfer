@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/crypto_key_dialog_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:text="@string/dialog.crypto.text"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/crypto_key_layout"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/crypto_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="4"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="код доступа"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/key_entered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"/>
+
+</LinearLayout>

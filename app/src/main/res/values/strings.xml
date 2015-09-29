@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">YMoney transfer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message.token_loaded">токен успешно загружен</string>
+    <string name="dialog.crypto.text">Введите четырёхзначный код доступа к Вашим платёжным данным</string>
+</resources>

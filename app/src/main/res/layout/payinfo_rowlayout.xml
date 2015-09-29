@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/payinfo_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/payinfo_amount"
+        android:textSize="14sp"
+        tools:text="14:30 15.09.2015" />
+
+    <TextView
+        android:id="@+id/payinfo_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        tools:text="4р" />
+
+    <TextView
+        android:id="@+id/payinfo_payee_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="@+id/payinfo_payee"
+        android:layout_below="@id/payinfo_time"
+        android:layout_marginRight="4dp"
+        android:textSize="14sp"
+        android:text="Кому:" />
+
+
+
+    <TextView
+        android:id="@+id/payinfo_payee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/payinfo_payee_text"
+        android:layout_below="@id/payinfo_time"
+        android:textSize="14sp"
+        tools:text="111122223333444" />
+
+    <TextView
+        android:id="@+id/payinfo_code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/payinfo_code"
+        android:layout_below="@+id/payinfo_time"
+        android:layout_marginRight="4dp"
+        android:textSize="14sp"
+        android:text="Код защиты:" />
+
+    <TextView
+        android:id="@+id/payinfo_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/payinfo_time"
+        android:textSize="14sp"
+        tools:text="1234" />
+
+</RelativeLayout>
